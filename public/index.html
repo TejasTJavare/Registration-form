@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #6079eb;
+    }
+
+    .signup-form {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(59, 9, 9, 0.1);
+    }
+
+    .signup-form h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #343a40;
+    }
+
+    .signup-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .signup-form input[type="text"],
+    .signup-form input[type="email"],
+    .signup-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .signup-form input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    .signup-form button {
+      background-color: #8e44ad;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .signup-form a {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #8e44ad;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-form">
+    <h1>Sign Up</h1>
+    <form action="#">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+      <label for="terms">
+        <input type="checkbox" id="terms" name="terms"> I agree to the terms and conditions
+      </label>
+    
+      <button type="submit">Create Account</button>
+
+    </form>
+    <a href="#">Already have an account? Sign in</a>
+  </div>
+  
+</body>
+</html>
